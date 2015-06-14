@@ -1,7 +1,12 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 // bower:scss
-@import "bootstrap-sass-official/assets/stylesheets/bootstrap.scss";
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
+
+
+$primary-color: #FFFFFF;
+
+
 
 .browsehappy {
   margin: 0.2em 0;
@@ -10,12 +15,127 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
   padding: 0.2em 0;
 }
 
-/* Space out content a bit */
 body {
-  padding-top: 20px;
-  padding-bottom: 20px;
+	font-family: 'libertad-thin', Helvetica, sans-serif;
+	background: url("../images/bg.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: $primary-color;
 }
 
+.container {
+	width: 960px;
+	height: 100%;
+}
+
+.logo {
+	margin: 0 auto;
+	margin-top: 178px;
+}
+
+h1 {
+	margin-top: 35px;
+	font-size: 33px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.description {
+	margin-top: 126px;
+
+		.hello {
+			font-family: 'libertad-bold', Helvetica, sans-serif;
+			font-size: 82px;
+			font-weight: bold;
+			display: block;
+			text-align: center;
+		}
+
+		p {
+			text-align: center;
+			font-size: 35px;
+		}
+
+}/*.description*/
+
+.social {
+	margin-top: 157px;
+
+				p {
+					text-align: center;
+					font-size: 22px;
+				}
+				.social-icons {
+					margin: 0 auto;
+					margin-left: 203px;
+					margin-top: 33px;
+
+						.icons {
+							  float: left;
+    						margin-right: 20px;
+						}
+						.icons:hover {
+							border: none;
+						}
+		} /*.social-icons*/
+} /*.social*/
+
+.contato {
+	border: 1px solid $primary-color;
+	width: 283px;
+	margin: 0 auto;
+	margin-top: 145px;
+	padding: 9px;
+
+			p {
+				font-family:'libertad-medium';
+				font-size: 15px;
+				text-align: center;
+			}
+}
+
+.copyright {
+	margin-top: 139px;
+	font-family: 'libertad-book';
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	color: $primary-color;
+}
+
+ a:hover {
+	text-decoration: none;
+	color: $primary-color;
+	border-bottom: 1px solid $primary-color;
+}
+
+@font-face {
+	font-family: 'libertad-thin';
+	src: url("fonts/Thin/libertad-thin-web.woff") format('woff');
+	src: url("fonts/Thin/libertad-thin-web.woff2") format('woff2');
+}
+
+@font-face {
+	font-family: 'libertad-bold';
+	src: url("fonts/Bold/libertad-bold-web.woff") format('woff');
+	src: url("fonts/Bold/libertad-bold-web.woff2") format('woff2');
+}
+
+@font-face {
+	font-family: 'libertad-medium';
+	src: url("fonts/Medium/libertad-medium-web.woff") format('woff');
+	src: url("fonts/Medium/libertad-medium-web.woff2") format('woff2');
+}
+
+@font-face {
+	font-family: 'libertad-book';
+	src: url('fonts/Book/libertad-book-web.woff') format('woff');
+	src: url('fonts/Book/libertad-book-web.woff2') format('woff2');
+}
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {

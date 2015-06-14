@@ -1,0 +1,46 @@
+.behance, .dribble, .email, .facebook, .instagram, .logo, .twitter{
+	background: url(../images/sprites.png) no-repeat;
+}
+
+.behance{
+	background-position: -262px -195px ;
+	width: 43px;
+	height: 42px;
+}
+
+.dribble{
+	background-position: -263px -146px ;
+	width: 42px;
+	height: 42px;
+}
+
+.email{
+	background-position: -311px -1px ;
+	width: 22px;
+	height: 21px;
+}
+
+.facebook{
+	background-position: -263px -98px ;
+	width: 42px;
+	height: 42px;
+}
+
+.instagram{
+	background-position: -262px -48px ;
+	width: 43px;
+	height: 42px;
+}
+
+.logo{
+	background-position: 0 0;
+	width: 259px;
+	height: 258px;
+}
+
+.twitter{
+	background-position: -263px -1px ;
+	width: 41px;
+	height: 42px;
+}
+
